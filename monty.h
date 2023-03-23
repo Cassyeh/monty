@@ -64,10 +64,10 @@ extern glob_t glob;
 void stack_init(stack_t **head);
 void free_all(void);
 
-/* helper1.c */
+/* process.c */
 int process_file(char *filename, stack_t **stack);
 
-/* helper2.c */
+/* delegate.c */
 void delegate_op(stack_t **stack, char *op, unsigned int line_number);
 
 /* Opcode Functions */
