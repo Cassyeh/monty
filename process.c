@@ -37,7 +37,7 @@ int process_file(char *filename, stack_t **stack)
 		line_number++;
 		/* printf("%s (%u) ", op, line_number); */
 		if (op)
-			delegate_op(stack, op, line_number);
+			get_func(stack, op, line_number);
 	}
 	free(line);
 	fclose(fp);
