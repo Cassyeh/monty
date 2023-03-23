@@ -67,8 +67,8 @@ void free_all(void);
 /* process.c */
 int process_file(char *filename, stack_t **stack);
 
-/* delegate.c */
-void delegate_op(stack_t **stack, char *op, unsigned int line_number);
+/* Get The Required Function */
+void get_func(stack_t **stack, char *op, unsigned int line_number);
 
 /* Opcode Functions */
 void _push(stack_t **stack, unsigned int line_number);
