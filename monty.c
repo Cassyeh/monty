@@ -22,7 +22,6 @@ void free_all(void)
 	stack_t *tmp1, *tmp2 = NULL;
 
 	tmp1 = *(global.top);
-	/* printf("global.top->%p\n",  (void*)global.top); */
 	while (tmp1 != NULL)
 	{
 		tmp2 = tmp1->next;
