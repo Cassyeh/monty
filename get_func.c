@@ -11,21 +11,16 @@ void get_func(stack_t **stack, char *op, unsigned int line_number)
 {
 	int i = 0;
 	instruction_t all_ops[] = {
-		{"push", instruction_push},
-		{"pall", instruction_pall},
-		{"pint", instruction_pint},
-		{"pop", instruction_pop},
-		{"swap", instruction_swap},
-		{"add", instruction_add},
-		{"nop", instruction_nop},
-		{"sub", instruction_sub},
-		{"div", instruction_div},
-		{"mul", instruction_mul},
-		{"mod", instruction_mod},
-		{"pchar", instruction_pchar},
-		{"pstr", instruction_pstr},
-		{"rotl", instruction_rotl},
-		{"rotr", instruction_rotr},
+		{"push", _push},
+		{"pall", _pall},
+		{"pint", _pint},
+		{"pop", _pop},
+		{"swap", _swap},
+		{"add", _add},
+		{"nop", _nop},
+		{"sub", _sub},
+		{"div", _div},
+		{"mul", _mul},
 		{NULL, NULL}
 	};
 
