@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point monty code interpreter
- 
+ *
  * @argc: number of command line arguments
  * @argv: pointer to an array of char pointers to arguments
  * Return: EXIT_SUCCESS or EXIT_FAILURE!!!

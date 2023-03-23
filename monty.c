@@ -1,13 +1,12 @@
 #include "monty.h"
 
-glob_t global;
-
 /**
  * stack_init - initialize all the things
  * @head: top of stack data structure
  **/
 void stack_init(stack_t **head)
 {
+	glob_t global;
 	*head = NULL;
 	global.top = head;
 }
@@ -19,6 +18,7 @@ void stack_init(stack_t **head)
  **/
 void free_all(void)
 {
+	glob_t global;
 	stack_t *tmp1, *tmp2 = NULL;
 
 	tmp1 = *(global.top);

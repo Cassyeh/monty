@@ -5,7 +5,7 @@
  * process_file - process the whole monty file
  * @filename: name of monty opcode file
  * @stack: pointer to pointer to top of stack data struct
- 
+ *
  * Return: return an error code or success
  **/
 int process_file(char *filename, stack_t **stack)
