@@ -20,25 +20,24 @@ int process_file(char *filename, stack_t **stack)
 
 	if (!filename)
 	{
-		printf("Error: Can't open file %s\n", filename);
+		fprintf(stderr, "Error: Can't open file %s\n", filename);
 		exit(EXIT_FAILURE);
 	}
 	fp = fopen(filename, "r");
 	if (fp == NULL)
 	{
-		printf("Error: Can't open file %s\n", filename);
+		fprintf(stderr, "Error: Can't open file %s\n", filename);
 		exit(EXIT_FAILURE);
 	}
 	atexit(free_all);
 	while ((read = getline(&line, &len, fp)) != -1)
 	{
-		/*printf("%s", line); */
 		op = strtok(line, DELIMS);
-		/* printf("<TOKEN1> %s  %u<--\n", op, line_number); */
 		line_number++;
-		/* printf("%s (%u) ", op, line_number); */
 		if (op)
+		{
 			get_func(stack, op, line_number);
+		}
 	}
 	free(line);
 	fclose(fp);
