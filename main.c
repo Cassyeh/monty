@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	stack_init(&head);
 	if (argc != 2)
 	{
-		printf("USAGE: monty file\n");
+		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	process_file(argv[1], &head);
