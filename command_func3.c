@@ -31,7 +31,7 @@ void _mod(stack_t **stack, unsigned int line_number)
  * @line_number: value of node
  * Return: nothing
  **/
-void _mod(stack_t **stack, unsigned int line_number)
+void _pchar(stack_t **stack, unsigned int line_number)
 {
 	int tmp;
 
